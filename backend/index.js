@@ -5,6 +5,7 @@ const helmet = require("helmet");
 
 const routes = require("./routes");
 const connectDb = require("./config/db");
+const { globalErrorHandlerMiddleware, pageNotFoundErrorHandlerMiddleware } = require("./middleware");
 
 dotenv.config();
 
